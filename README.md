@@ -1,6 +1,6 @@
 # webshop-grupp5
 
-This is the webshop for all you hightec needs. There is no point on searching for other stores, they are all boring.
+This is a webshop created in a group assignment using React.js. The backend was provided by our teacher.
 
 ## Prerequisites
 
