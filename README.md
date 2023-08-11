@@ -1,20 +1,21 @@
 # webshop-grupp5
+
 This is the webshop for all you hightec needs. There is no point on searching for other stores, they are all boring.
 
 ## Prerequisites
 
-- Node.js 
-- NPM 
+- Node.js
+- NPM
 
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
-https://github.com/r-4u-1/webshop-grupp5.git
+   https://github.com/r-4u-1/webshop-grupp5.git
 
 2. Navigate to the server folder from the root by:
-cd server
+   cd server
 
 3. Install the server dependencies:
 
@@ -51,7 +52,6 @@ Choose the products you want by clicking on buy, yes you can read more about the
 Admin
 login and start addind products or editing the existing ones, mark existing orders to completed and more.
 
-
 ## License
 
 Unlicensed
@@ -59,4 +59,3 @@ Unlicensed
 ## Acknowledgements
 
 Thanks to the team Rickard, Yohanna, Johan, Saeed and Raul for efforts of making this happen.
-
