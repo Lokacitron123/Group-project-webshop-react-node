@@ -1,0 +1,20 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}/*# sourceMappingURL=Loader.css.map */

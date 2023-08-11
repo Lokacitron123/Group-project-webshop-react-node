@@ -1,0 +1,23 @@
+@import "../../variables";
+
+.welcome-btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .welcome-btn__content {
+    transition: transform 350ms ease-in-out;
+    background-color: var(--text-clr);
+
+    &:hover {
+      transform: scale(1.8);
+    }
+
+    svg {
+      font-size: 1.2rem;
+    }
+  }
+  p {
+    margin-top: 0.8rem;
+  }
+}

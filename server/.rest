@@ -1,0 +1,99 @@
+//Skapa en admin användare här
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+  "firstName": "User",
+  "lastName": "Usersson",
+  "email": "user@user.se",
+  "password": "user",
+  "isAdmin": false
+}
+
+# {
+#   "firstName": "Admin",
+#   "lastName": "Adminsson",
+#   "email": "admin@admin.se",
+#   "password": "admin",
+#   "isAdmin": true
+# }
+
+###
+
+//Logga in här
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.se",
+  "password": "admin"
+}
+
+###
+
+//Skapa produkter här
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "title": "The Laptop",
+  "price": 2000,
+  "description": "It's really bad!",
+  "image": "https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg",
+  "inStock": 20
+}
+
+###
+
+//Skapa produkter här
+PUT http://localhost:3000/api/products/64764fd512234d2afe370e8b
+Content-Type: application/json
+
+{
+    "_id": "64764fd512234d2afe370e8b",
+    "title": "The Phone",
+    "description": "The Best!",
+    "price": 1000,
+    "image": "./img/iphone.png",
+    "inStock": 10,
+    "categories": [],
+    "deleted": false
+  }
+
+###
+
+//Skapa fraktsätt här
+POST http://localhost:3000/api/shippingMethod
+Content-Type: application/json
+
+{
+  "company": "DHL",
+  "price": 100,
+  "deliveryTimeInHours": 24
+}
+
+###
+GET http://localhost:3000/api/shippingMethod
+
+###
+GET http://localhost:3000/api/orders/64887b7548cadd28a7edcdad
+
+###
+GET http://localhost:3000/api/products/64766c981a84fec9a289f5d9
+
+###
+GET http://localhost:3000/api/products
+
+###
+PUT http://localhost:3000/api/products/6481b711aad6514afa9207d3
+Content-Type: application/json
+
+{
+    "_id": "6481b711aad6514afa9207d3",
+    "title": "The Phone",
+    "description": "The Best!",
+    "price": 1000,
+    "image": "https://cdn.inet.se/product/688x386/1974411_0.jpg",
+    "inStock": 10,
+    "deleted": false
+  }

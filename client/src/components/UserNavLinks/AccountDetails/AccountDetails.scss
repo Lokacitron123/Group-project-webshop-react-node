@@ -1,0 +1,177 @@
+@import "../../../variables";
+
+.account-details__container {
+  
+  margin-left: 1rem;
+  display: flex;
+}
+
+.account-details__profile {
+  display: flex;
+  padding: 0 2rem;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    margin-top: 1rem;
+    width: 4rem;
+  }
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.account-details__infobox {
+  width: 100%;
+}
+
+.account-details__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.account-details_title {
+  flex: 1;
+}
+
+.account-details__info {
+  flex: 2;
+  p {
+    margin: 10px;
+  }
+}
+
+.account-details__editbtn {
+  flex-basis: 1;
+}
+
+.account-details__profile div button,
+.account-details__editbtn > button {
+  min-width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-clr);
+  background-color: var(--darkgrey-clr);
+  border: 1px solid var(--text-clr);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    border-image: linear-gradient(
+      to right,
+      rgba(206, 117, 138, 0.8),
+      rgba(84, 235, 230, 0.8)
+    );
+    border-image-slice: 1;
+  }
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+/* Media queries for smaller screens */
+
+@media (max-width: 768px) {
+  .account-details__container {
+    min-width: auto;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .account-details__profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 1rem;
+    button {
+      margin-top: 1rem;
+      width: auto;
+    }
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .welcome-message {
+    margin-top: 10px;
+  }
+
+  .account-details__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 1rem;
+
+    .account-details_title {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .account-details__info {
+      p {
+        margin: 5px 0;
+      }
+    }
+
+    .account-details__editbtn {
+      margin-top: 1rem;
+    }
+  }
+
+  .flex-right {
+    justify-content: flex-end;
+  }
+}
+
+/* Additional media query for screens between 601px and 768px */
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .account-details__container {
+    margin-left: 0.5rem;
+    padding: 1rem;
+  }
+
+  .account-details__profile {
+    padding: 0;
+    margin-bottom: 1rem;
+    button {
+      width: 100%;
+    }
+  }
+
+  .account-details__item {
+    padding: 0;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .account-details_title {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

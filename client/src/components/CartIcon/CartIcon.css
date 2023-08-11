@@ -1,0 +1,51 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.cart-icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.cart-icon__container .cart-icon__content {
+  transition: transform 350ms ease-in-out;
+}
+.cart-icon__container .cart-icon__content:hover {
+  transform: scale(1.8);
+}
+.cart-icon__container .cart-icon__content > button {
+  cursor: pointer;
+}
+.cart-icon__container .cart-icon__content svg {
+  font-size: 1.2rem;
+  padding-right: 2px;
+}
+.cart-icon__container .cart-icon__content > span {
+  background-color: purple;
+  width: 22px;
+  height: 22px;
+  padding-top: 2px;
+  position: absolute;
+  transform: translateY(-14px);
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--font-two);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(186, 24, 201);
+}
+.cart-icon__container > p {
+  margin-top: 0.8rem;
+}/*# sourceMappingURL=CartIcon.css.map */

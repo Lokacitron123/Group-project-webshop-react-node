@@ -1,0 +1,33 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.welcome-btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcome-btn__container .welcome-btn__content {
+  transition: transform 350ms ease-in-out;
+  background-color: var(--text-clr);
+}
+.welcome-btn__container .welcome-btn__content:hover {
+  transform: scale(1.8);
+}
+.welcome-btn__container .welcome-btn__content svg {
+  font-size: 1.2rem;
+}
+.welcome-btn__container p {
+  margin-top: 0.8rem;
+}/*# sourceMappingURL=WelcomeBtn.css.map */

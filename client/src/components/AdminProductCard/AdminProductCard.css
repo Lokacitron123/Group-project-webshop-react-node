@@ -1,0 +1,65 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.adminProductCard__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  width: 250px;
+  height: 345px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 10px;
+}
+.adminProductCard__container > .admin-product-card-image {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(85, 85, 85);
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.adminProductCard__container > .admin-product-card-image > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.admin-product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.admin-product-info > h2 {
+  color: var(--text-clr);
+  font-family: var(--font-three);
+}
+.admin-product-info > a > button {
+  background-color: rgb(51, 51, 51);
+  color: var(--text-clr);
+  font-family: var(--font-three);
+  border: 1px solid rgb(114, 114, 114);
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  transition: border 0.5s ease;
+  border-radius: 5px;
+}
+.admin-product-info button:hover {
+  border: 1px solid rgb(255, 255, 255);
+}/*# sourceMappingURL=AdminProductCard.css.map */

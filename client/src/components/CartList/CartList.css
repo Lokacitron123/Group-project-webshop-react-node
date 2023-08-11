@@ -1,0 +1,110 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.table {
+  width: 900px;
+  background-color: rgb(96, 98, 190);
+  color: var(--text-clr);
+  border: none;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: var(--font-three);
+  font-weight: 700;
+}
+.table th, .table td {
+  border: 1px solid #4e5093;
+  border-top: none;
+  padding: 10px;
+}
+.table tr {
+  border-bottom: 10px solid #4e5093;
+}
+.table input {
+  padding: 5px;
+  border: 1px solid #e5e5e5;
+}
+.table .product_action button {
+  cursor: pointer;
+  background-color: #37378b;
+  color: var(--text-clr);
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+}
+.table .product_action button:hover {
+  background-color: var(--dark-clr);
+  transition: all 500ms linear;
+}
+.table .product_action button:first-child {
+  margin-right: 10px;
+}
+.table .product_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.table .product_data img {
+  width: 100px;
+  height: 100px;
+}
+.table .product_data p {
+  flex: 1;
+}
+
+.summary {
+  width: 900px;
+  background-color: #121313;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-family: var(--font-three);
+}
+.summary .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.summary .row p:first-child {
+  font-weight: bold;
+}
+.summary .row:last-child {
+  border-bottom: 0;
+}
+.summary .row p {
+  color: var(--text-clr);
+}
+.summary button {
+  background-color: var(--blue-clr);
+  padding: 10px 15px;
+  border: 1px solid var(--blue-clr);
+  border-radius: 4px;
+  color: var(--text-clr);
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 12rem;
+  font-family: var(--font-three);
+}
+.empty > p {
+  font-size: 20px;
+}/*# sourceMappingURL=CartList.css.map */

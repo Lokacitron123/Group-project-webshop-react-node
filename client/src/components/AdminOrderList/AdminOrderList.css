@@ -1,0 +1,71 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.adminOrderList__container {
+  background-color: var(--darkgrey-clr);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+.adminOrderList__container > h1 {
+  color: var(--text-clr);
+  margin-bottom: 3rem;
+}
+
+.admin-order-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+}
+
+.admin-order-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(51, 51, 51);
+  width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  gap: 0.6rem;
+}
+.admin-order-card > .active, .admin-order-card .inactive {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+.admin-order-card > button {
+  background-color: rgb(51, 51, 51);
+  color: var(--text-clr);
+  font-family: var(--font-three);
+  border: 1px solid rgb(114, 114, 114);
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  transition: border 0.5s ease;
+  border-radius: 5px;
+}
+.admin-order-card button:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+.admin-order-card > .active {
+  background-color: rgb(88, 124, 88);
+}
+.admin-order-card > .inactive {
+  background-color: rgb(180, 105, 105);
+}/*# sourceMappingURL=AdminOrderList.css.map */

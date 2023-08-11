@@ -1,0 +1,90 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.adminProductDetails__container {
+  background-color: var(--darkgrey-clr);
+  width: 80%;
+  margin: 3rem auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.adminProductDetails__container > h1 {
+  color: var(--text-clr);
+  margin-bottom: 3rem;
+}
+
+.admin-product-details-image {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(85, 85, 85);
+  border-radius: 10px;
+}
+.admin-product-details-image > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.admin-product-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.admin-product-details-info {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.admin-product-details-info > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.admin-product-details-info > input, .admin-product-details-info input[type=text] {
+  background-color: rgb(63, 62, 62);
+  padding: 0.3rem;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.admin-product-details-btn {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.admin-product-details-btn > button {
+  background-color: var(--darkgrey-clr);
+  color: var(--text-clr);
+  font-family: var(--font-three);
+  border: 2px solid rgb(114, 114, 114);
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  transition: border 0.5s ease;
+}
+.admin-product-details-btn button:hover {
+  border: 2px solid rgb(255, 255, 255);
+}/*# sourceMappingURL=AdminProductDetails.css.map */

@@ -1,0 +1,47 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.shipping__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+}
+.shipping__container > h1 {
+  color: var(--text-clr);
+  padding-bottom: 2rem;
+}
+
+.shipping-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+.shipping-list > .shipping-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(47, 48, 47);
+  padding: 6rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.shipping-list > .shipping-card.selected {
+  background-color: rgb(93, 136, 136);
+}
+.shipping-list > .shipping-card > h1 {
+  color: var(--text-clr);
+}/*# sourceMappingURL=ShippingInfo.css.map */

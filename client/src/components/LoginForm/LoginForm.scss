@@ -1,0 +1,71 @@
+@import "../../variables";
+
+.login-form__container {
+  padding: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--font-clr);
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: var(--dark-clr);
+  }
+
+  .login-form__button {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-clr);
+    background-color: var(--darkgrey-clr);
+    border: 1px solid var(--text-clr);
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out; /* Add border-color transition */
+
+    &:hover {
+      transform: scale(1.1);
+      border-image: linear-gradient(
+        to right,
+        rgba(206, 117, 138, 0.8),
+        rgba(84, 235, 230, 0.8)
+      );
+      border-image-slice: 1;
+    }
+  }
+}
+.new-member__button {
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+
+  background-color: var(--darkgrey-clr);
+  border: 1px solid var(--text-clr);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out; /* Add border-color transition */
+
+  a {
+    color: var(--text-clr);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    border-image: linear-gradient(
+      to right,
+      rgba(206, 117, 138, 0.8),
+      rgba(84, 235, 230, 0.8)
+    );
+    border-image-slice: 1;
+  }
+}

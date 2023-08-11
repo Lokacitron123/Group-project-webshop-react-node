@@ -1,0 +1,51 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.adminProductList__container {
+  background-color: var(--darkgrey-clr);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+.adminProductList__container > h1 {
+  color: var(--text-clr);
+  margin-bottom: 3rem;
+}
+.adminProductList__container > a > button {
+  background-color: var(--darkgrey-clr);
+  color: var(--text-clr);
+  font-family: var(--font-three);
+  border: 2px solid rgb(114, 114, 114);
+  width: 140px;
+  height: 50px;
+  cursor: pointer;
+  transition: border 0.5s ease;
+}
+.adminProductList__container button:hover {
+  border: 2px solid rgb(255, 255, 255);
+}
+.adminProductList__container > a {
+  margin-bottom: 3rem;
+}
+
+.admin-product-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}/*# sourceMappingURL=AdminProductList.css.map */

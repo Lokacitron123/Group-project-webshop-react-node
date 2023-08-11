@@ -1,0 +1,71 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.login-form__container {
+  padding: 20px;
+}
+.login-form__container label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--font-clr);
+}
+.login-form__container input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: var(--dark-clr);
+}
+.login-form__container .login-form__button {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-clr);
+  background-color: var(--darkgrey-clr);
+  border: 1px solid var(--text-clr);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out; /* Add border-color transition */
+}
+.login-form__container .login-form__button:hover {
+  transform: scale(1.1);
+  -o-border-image: linear-gradient(to right, rgba(206, 117, 138, 0.8), rgba(84, 235, 230, 0.8));
+     border-image: linear-gradient(to right, rgba(206, 117, 138, 0.8), rgba(84, 235, 230, 0.8));
+  border-image-slice: 1;
+}
+
+.new-member__button {
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--darkgrey-clr);
+  border: 1px solid var(--text-clr);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out; /* Add border-color transition */
+}
+.new-member__button a {
+  color: var(--text-clr);
+}
+.new-member__button:hover {
+  transform: scale(1.1);
+  -o-border-image: linear-gradient(to right, rgba(206, 117, 138, 0.8), rgba(84, 235, 230, 0.8));
+     border-image: linear-gradient(to right, rgba(206, 117, 138, 0.8), rgba(84, 235, 230, 0.8));
+  border-image-slice: 1;
+}/*# sourceMappingURL=LoginForm.css.map */

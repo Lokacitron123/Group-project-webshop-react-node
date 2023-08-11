@@ -1,0 +1,116 @@
+@import "../../variables";
+
+.table {
+    width: 900px;
+    background-color: rgb(96, 98, 190);
+    color: var(--text-clr);
+    border: none;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--font-three);
+    font-weight: 700;
+
+    th, td {
+        border: 1px solid #4e5093;
+        border-top: none;
+        padding: 10px;
+    }
+
+    tr {
+        border-bottom: 10px solid #4e5093;
+    }
+
+    input {
+        padding: 5px;
+        border: 1px solid #e5e5e5;
+    }
+
+    .product_action {
+        
+        button {
+            cursor: pointer;
+            background-color: #37378b;
+            color: var(--text-clr);
+            border-radius: 4px;
+            text-align: center;
+            padding: 10px;
+            display: inline-block;
+            border: none;
+
+            &:hover {
+                background-color: var(--dark-clr);
+                transition: all 500ms linear;
+            }
+        }
+
+        button:first-child {
+            margin-right: 10px;
+        }
+
+    }
+
+    .product_data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            flex: 1;
+        }
+    }
+}
+
+.summary {
+    width: 900px;
+    background-color: #121313;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-family: var(--font-three);
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .row p:first-child {
+        font-weight: bold;
+    }
+
+    .row:last-child {
+        border-bottom: 0;
+    }
+
+    .row p {
+        color: var(--text-clr);
+    }
+
+    button {
+        background-color: var(--blue-clr);
+        padding: 10px 15px;
+        border: 1px solid var(--blue-clr);
+        border-radius: 4px;
+        color: var(--text-clr);
+        display: inline-block;
+        margin: 10px;
+        font-size: 1.1em;
+    }
+}
+
+.empty {
+    text-align: center;
+    margin-top: 12rem;
+    font-family: var(--font-three);
+
+    > p {
+        font-size: 20px;
+    }
+}

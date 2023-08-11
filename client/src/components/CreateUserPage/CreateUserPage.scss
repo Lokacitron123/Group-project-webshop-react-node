@@ -1,0 +1,99 @@
+@import "../../variables";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper-children__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  background-color: var(--darkgrey-clr);
+  border-radius: 8px;
+  .info-container {
+    margin-bottom: 20px;
+    text-align: center;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: var(--text-clr);
+    }
+
+    p {
+      font-size: 14px;
+      color: var(--text-clr);
+    }
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-clr);
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-clr);
+  background-color: var(--darkgrey-clr);
+  border: 1px solid var(--text-clr);
+
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    border-image: linear-gradient(
+      to right,
+      rgba(206, 117, 138, 0.8),
+      rgba(84, 235, 230, 0.8)
+    );
+    border-image-slice: 1; /* The 'border-image-slice: 1' ensures that the border image covers the entire border area without any inward offsets, allowing the gradient transition to be applied smoothly and consistently. */
+  }
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.password-strength {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper-children__container {
+    width: 100%;
+  }
+}

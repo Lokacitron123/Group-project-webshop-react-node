@@ -1,0 +1,53 @@
+@import "../../variables";
+
+.login-btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .login-btn__content {
+    transition: transform 350ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.8);
+    }
+
+    svg {
+      font-size: 1.2rem;
+    }
+  }
+  p {
+    margin-top: 0.8rem;
+  }
+}
+
+.slide-in__container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: right 0.3s ease-in-out;
+  z-index: 123;
+
+  &.slide-in {
+    right: 0;
+  }
+
+  .close-button {
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    right: 10px;
+    background-color: var(--text-clr);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: var(--dark-clr);
+    z-index: 1;
+  }
+}

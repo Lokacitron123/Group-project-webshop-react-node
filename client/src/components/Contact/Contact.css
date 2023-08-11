@@ -1,0 +1,55 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.contact p {
+  color: var(--text-clr);
+}
+.contact h3 {
+  color: var(--text-clr);
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-three);
+  transform: translateY(30px);
+}
+.contact .contact__container {
+  background-color: var(--text-clr);
+  width: 400px;
+  padding: 1rem;
+  margin: 3rem auto;
+  font-family: var(--font-three);
+}
+.contact .contact__container div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.contact .contact__container div label {
+  padding-bottom: 5px;
+  color: var(--dark-clr);
+}
+.contact .contact__container div input, .contact .contact__container div textarea {
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact .contact__container button {
+  background-color: var(--blue-clr);
+  color: var(--text-clr);
+  font-size: 1.1em;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid var(--blue-clr);
+  border-radius: 4px;
+}/*# sourceMappingURL=Contact.css.map */

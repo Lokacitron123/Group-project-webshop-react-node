@@ -1,0 +1,42 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+.admin__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin__container > h1 {
+  color: white;
+  margin-top: 2rem;
+}
+
+.admin-btn {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+}
+.admin-btn > button {
+  background-color: var(--dark-clr);
+  color: var(--text-clr);
+  font-family: var(--font-three);
+  border: 2px solid rgb(114, 114, 114);
+  width: 110px;
+  height: 50px;
+  cursor: pointer;
+  transition: border 0.5s ease;
+}
+.admin-btn button:hover {
+  border: 2px solid rgb(255, 255, 255);
+}/*# sourceMappingURL=Admin.css.map */

@@ -1,0 +1,106 @@
+@import "../../variables";
+
+.customerInfo__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 70%;
+    margin: 3rem auto;
+}
+
+.customer-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: rgb(47, 48, 47);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 80%;
+
+    > .customer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        background-color: #272727;
+        width: 300px;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 0 auto;
+
+        > p span {
+            color: rgb(156, 18, 156);
+        }
+    }
+
+    > .customer-address {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        padding-top: 40px;
+
+        > form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+            > label {
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                color: var(--text-clr);
+                font-family: var(--font-two);
+                position: relative;
+
+                > input {
+                    width: 200px;
+                    margin-left: 10px;
+                    padding: 5px;
+                    border: none;
+                    background-color: #272727;
+                    color: white;
+                }
+    
+                > p {
+                    color: var(--pink-clr);
+                    position: absolute;
+                    left: 100%;
+                    margin-left: 10px;
+                    font-size: 22px;
+                }
+            }
+
+            > input[type="submit"] {
+                margin: 0.4rem 4.7rem;
+                background-color: var(--darkgrey-clr);
+                color: var(--text-clr);
+                font-family: var(--font-three);
+                border: none;
+                border-radius: 10px;
+                width: 70px;
+                height: 40px;
+                cursor: pointer;
+            }
+        
+            input[type="submit"]:hover {
+                border:2px solid rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+.missing-customer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
+
+    > p {
+        font-size: 20px;
+    }
+}

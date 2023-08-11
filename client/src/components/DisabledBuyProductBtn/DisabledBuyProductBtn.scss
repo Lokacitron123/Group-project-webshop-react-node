@@ -1,0 +1,13 @@
+@use "../../variables";
+
+.disabled-buy-btn {
+    font-family: var(--font-one);
+    display: block;
+    margin-top: auto;
+    color: white;
+    background-color: maroon;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}

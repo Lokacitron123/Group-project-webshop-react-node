@@ -1,0 +1,27 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root-div {
+  background: var(--dark-clr);
+  min-height: 100vh;
+  color: var(--text-clr);
+}
+
+p,
+li,
+h1,
+a {
+  font-family: var(--font-two);
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}

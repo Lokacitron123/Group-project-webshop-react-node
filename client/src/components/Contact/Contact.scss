@@ -1,0 +1,51 @@
+@import "../../variables";
+.contact {
+  
+p {
+  color: var(--text-clr);
+}
+
+h3 {
+  color: var(--text-clr);
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-three);
+  transform: translateY(30px);
+}
+
+.contact__container {
+  background-color: var(--text-clr);
+  width: 400px;
+  padding: 1rem;
+  margin: 3rem auto;
+  font-family: var(--font-three);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+    label {
+      padding-bottom: 5px;
+      color: var(--dark-clr);
+    }
+
+    input, textarea {
+      padding: 10px 15px;
+      outline: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+
+  button {
+    background-color: var(--blue-clr);
+    color: var(--text-clr);
+    font-size: 1.1em;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid var(--blue-clr);
+    border-radius: 4px;
+  }
+}
+}

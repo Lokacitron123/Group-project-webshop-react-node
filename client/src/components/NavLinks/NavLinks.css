@@ -1,0 +1,48 @@
+:root {
+  --dark-clr: #121313;
+  --darkgrey-clr: #242424;
+  --blue-clr: #4d8ee2;
+  --teal-clr: #54ebe6;
+  --pink-clr: #ce758a;
+  --purple-clr: #9e49b8;
+  --text-clr: #fff;
+  --borders: #380c45;
+  --font-one: "Audiowide", cursive;
+  --font-two: "Chakra Petch", sans-serif;
+  --font-three: "Montserrat", sans-serif;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  padding: 1rem;
+}
+ul li a {
+  color: var(--text-two);
+  font-weight: 700;
+}
+
+.hover-effect__underline {
+  cursor: pointer;
+  position: relative;
+  padding: 1rem;
+}
+.hover-effect__underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--text-clr);
+  transition: transform 350ms ease-in-out;
+  transform: scale(0);
+  transform-origin: right;
+}
+.hover-effect__underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}/*# sourceMappingURL=NavLinks.css.map */

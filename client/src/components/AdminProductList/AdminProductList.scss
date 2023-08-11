@@ -1,0 +1,43 @@
+@import "../../variables";
+
+.adminProductList__container {
+    background-color: var(--darkgrey-clr);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+
+    > h1 {
+        color: var(--text-clr);
+        margin-bottom: 3rem;
+    }
+
+    > a > button {
+        background-color: var(--darkgrey-clr);
+        color: var(--text-clr);
+        font-family: var(--font-three);
+        border: 2px solid rgb(114, 114, 114);
+        width: 140px;
+        height: 50px;
+        cursor: pointer;
+        transition: border 0.5s ease;
+    }
+
+    button:hover {
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    > a {
+        margin-bottom: 3rem;
+    }
+}
+
+.admin-product-list-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}

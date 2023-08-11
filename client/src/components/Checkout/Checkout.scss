@@ -1,0 +1,54 @@
+@import "../../variables";
+
+.checkout__container {
+    width: 80%;
+    margin: auto;
+    min-height: 70vh;
+
+    > h1 {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        color: var(--text-clr);
+    }
+
+    > button {
+        margin: 1rem;
+        padding: 0.5rem;
+        border-color: white;
+        background-color: var(--darkgrey-clr);
+        color: white;
+        border: 2px solid rgb(88, 88, 88);
+        font-family: var(--font-three);
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:disabled {
+            background-color: rgb(165, 70, 70);
+            cursor: not-allowed;
+        }
+
+        &:hover {
+            box-shadow: rgba(68, 0, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 0, 212, 0.3) 0px 18px 36px -18px inset;
+            border: 2px solid rgb(126, 16, 216);
+        }
+    }
+}
+
+.order-info-container {
+    background-color: var(--darkgrey-clr);
+    padding: 3rem;
+    min-height: 32rem;
+}
+
+.checkout-headings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    color: rgb(56, 56, 56);
+    margin: 0.5rem;
+
+    > .active {
+        color: white;
+    }
+}
